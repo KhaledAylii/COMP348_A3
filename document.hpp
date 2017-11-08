@@ -15,6 +15,8 @@
 #include "index_item.hpp"
 using namespace std;
 
+// IT WORKS
+
 class document: private index_item
 {
 public:
