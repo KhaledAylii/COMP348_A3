@@ -21,12 +21,10 @@ vector<sentence> sentence_tokenizer::splitSentence(const string &docText){
         cout << "failed to open abbreviations document." << endl;
     }
     int start = 0;
-    int end = 0;
     int currentPos = 0;
     for (string::const_iterator it=docText.begin(); it!= docText.end(); ++it){
-        end = docText.find_first_not_of("?.!", start);
         if (*it=='?'){
-            
+            cout << docText.substr(start, currentPos+1) << endl;
 //            sentence currentS(docText.substr(start, currentPos), start);
 //            tokenSentences.push_back(currentS);
               start=currentPos+2;
