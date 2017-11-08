@@ -21,7 +21,7 @@ class document: private index_item
 {
 public:
     document();
-    document(string &name);
+    document(string name);
     string name();
     int size() override {return sizeItem;};
     string content() override {return text;}; // returns text of the document.
